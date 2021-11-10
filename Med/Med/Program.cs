@@ -8,9 +8,9 @@ using System.Threading.Tasks;
  */
 namespace MinEditDistance
 {
-    class Program
+    public class Program
     {
-        public static int minDistace(string word1, string word2)
+        public static int minDistance(string word1, string word2)
         {
             int len1 = word1.Length;
             int len2 = word2.Length;
@@ -44,8 +44,9 @@ namespace MinEditDistance
             string s1 = "xyzab";
             string s2 = "axyzc";
 
-            Console.WriteLine("The distance is: " + minDistace(s1, s2));
+            Console.WriteLine("The distance is: " + minDistance(s1, s2));
             Console.ReadKey();
         }
     }
 }
+// https://github.com/lost1234/Daily_Task/blob/main/Med/Med/Program.cs
