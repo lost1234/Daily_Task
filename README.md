@@ -24,7 +24,7 @@ c. A word with pure numbers can be consider as a normal word
 d. A word which has any punctuation inside (e.g. “It’s”) can be consider as a normal word.
 
 
-For today’s task(2021.11.11):
+2021.11.11
 I'd like you to learn an algorithm of evaluating a target sentence (the translation output) against a reference sentence (the perfect human-translated sentence), which is called "BLEU (Bilingual Evaluation Understudy)". This algorithm is widely used in assessing the quality of a machine translation model.
 Try to search and understand how this algorithm works. Here is a paper which may help you: https://www.aclweb.org/anthology/P02-1040.pdf
 Requirements
