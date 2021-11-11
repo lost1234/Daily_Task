@@ -30,6 +30,40 @@ namespace NGram
             return sb.ToString();
         }
     }
+    public class BLEU
+    {
+        //n: the ngram order
+        public double BleuScore(string reference, string candidate, double[] weight) 
+        {
+            //NGram nGram = new NGram();
+            //List<string> r_ngram = NGram.CreateNGram(reference, n);
+            //List<string> c_ngram = NGram.CreateNGram(candidate, n);
+            ////ngram in candidate
+            //int count = r_ngram.Count();
+            //max_ref_count = 
+            //int cliped_count = Math.Min(count, max_ref_count);
+            return;
+        }
+        public int CountClip()
+        {
+            return 
+        }
+        //best match: candidate_len = reference_len  -- no penalty
+        // if candidate_len != reference_len : 
+        public double brevity_penalty(int reference, int candidate)
+        {
+            if (candidate > reference)
+            {
+                return 1.0;
+            }
+            else if(reference == 0) 
+            {
+                return 0;
+            }
+
+            return Math.Exp(1 - reference / candidate);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
