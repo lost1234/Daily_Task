@@ -40,3 +40,39 @@ COMET: A Neural Framework for MT Evaluation (aclanthology.org)
 2021.11.12 
 Python nltk source code: https://github.com/nltk/nltk/blob/7d3d6a4f77b76a1f5eb0d0cbc9731716fcc17e68/nltk/util.py#L825
 a link related to article: https://www.cnblogs.com/by-dream/p/7679284.html
+For today’s task: 
+1.	Please go ahead about the BLEU score implementation.
+2.	we may have the need of reading/modifying XML settings for tools and pipelines in our work, I would need you to write some code to parse XML.
+<?xml version='1.0' encoding='utf-8'?>
+<Job>
+    <Configuration>
+        <UseShell>true</UseShell>
+        <Size>4</Size>
+        <EncodingString>UTF-8</EncodingString>
+    </Configuration>
+    <DataPath>
+        <Input>d:/test/data</Input>
+        <Output>d:/test/result</Output>
+    </DataPath>
+</Job>
+
+Your code should read above XML settings from file "JobConfig.xml", and load its settings into a C# object "Job". "Job" will have two members: "Configuration" and "DataPath". For example:
+
+class Job{
+    Configuration Config;
+    DataPath Data;
+}
+
+class Configuration{
+    bool UseShell;
+    ...
+}
+
+class DataPath{
+   ...
+}
+
+Please use at least two approaches to achieve the requirement (e.g. deserialization, read each setting manually).
+
+You can create a simple xml file to test your code.
+
