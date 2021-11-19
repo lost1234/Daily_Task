@@ -54,9 +54,6 @@ namespace testHTML
                 {
                     sw.Write(pageHtml);
                 }
-
-                "."   
-                c.t
             }
             catch (WebException webEx)
             {
